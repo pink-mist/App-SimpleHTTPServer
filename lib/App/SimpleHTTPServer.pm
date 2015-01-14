@@ -6,6 +6,8 @@ package App::SimpleHTTPServer;
 use Mojolicious::Lite;
 use Scalar::Util qw/ looks_like_number /;
 
+our $TESTING = 0;
+
 sub import {
     my $package = shift;
     my $port    = shift;
@@ -18,7 +20,11 @@ sub import {
 
     plugin Directory => root => $path;
 
-    app->start( qw/ daemon -m production -l /, "http://*:$port/" );
+    my @args = (qw/ daemon -l /, "http://*:$port/");
+       @args = (qw/ eval /) if $TESTING; # For testing, it needs something to
+                                         # do so it doesn't display help message
+
+    app->start(@args);
 }
 
 1;
