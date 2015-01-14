@@ -10,7 +10,7 @@ sub import {
     my $package = shift;
     my $port    = shift;
     if (not looks_like_number $port) {
-        unshift @ARGV, $port if defined $port;
+        unshift @_, $port if defined $port;
         $port   = 8000;
     }
     my $path    = shift;
