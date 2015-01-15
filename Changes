@@ -1,0 +1,7 @@
+{{$NEXT}}
+  - Change dependency to Mojolicious::Plugin::Directory::Stylish
+  - Let Mojolicious have a secret so it doesn't worry about it
+  - Prevent Mojolicious from getting excited about @ARGV
+
+0.001
+  - Initial release
