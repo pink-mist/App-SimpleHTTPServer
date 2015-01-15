@@ -3,6 +3,8 @@ use warnings;
 package App::SimpleHTTPServer;
 
 # ABSTRACT: Serve up a directory via http simply and easily
+
+BEGIN { @ARGV = qw/ -m production /; }
 use Mojolicious::Lite;
 use Scalar::Util qw/ looks_like_number /;
 

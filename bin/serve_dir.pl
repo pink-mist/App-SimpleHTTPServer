@@ -1,5 +1,8 @@
 #!/usr/bin/env perl
 
-use App::SimpleHTTPServer @ARGV;
+my @args;
+BEGIN { @args = @ARGV; }
+
+use App::SimpleHTTPServer @args;
 
 # Really, there's not much more to this...
