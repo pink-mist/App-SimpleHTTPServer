@@ -26,6 +26,7 @@ sub import {
        @args = (qw/ eval /) if $TESTING; # For testing, it needs something to
                                          # do so it doesn't display help message
 
+    app->secrets([qw/ foo /]);
     app->start(@args);
 }
 
