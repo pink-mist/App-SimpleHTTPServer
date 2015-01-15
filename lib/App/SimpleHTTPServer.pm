@@ -35,4 +35,21 @@ sub import {
 
 1;
 
+=head1 SYNOPSIS
+
+  $ # To serve the current directory via http on port 8000, simply do:
+  $ perl -MApp::SimpleHTTPServer
+
+  $ # or use the serve_dir script:
+  $ serve_dir
+
+=head1 SEE ALSO
+
+L<Mojolicious> - The Mojolicious web framework
+
+L<Mojolicious::Plugin::Directory::Stylish> - The module that actually renders
+the directory listing
+
+=cut
+
 __DATA__

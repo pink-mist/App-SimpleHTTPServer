@@ -1,5 +1,8 @@
 #!/usr/bin/env perl
 
+# ABSTRACT: serve a directory's contents via http
+# PODNAME: serve_dir
+
 use strict;
 use warnings;
 
