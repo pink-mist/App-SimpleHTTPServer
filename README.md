@@ -2,16 +2,16 @@
 
 This contains a module and a small script that serves up a directory via http.
 
-## serve\_me
+## serve\_dir
 
-The serve\_me script can be run by just typing "serve\_me" in the directory you
-want to serve up. This will by default start up a http server on port 8000.
+The serve\_dir script can be run by just typing "serve\_dir" in the directory
+you want to serve up. This will by default start up a http server on port 8000.
 
 ### Options
 
-serve\_me understands the following options:
+serve\_dir understands the following options:
 
-serve\_me [options] [port] [directory]
+serve\_dir [options] [port] [directory]
 
 * [options] - Currently no options are supported, but a -h/--help option will
 be added soon.
@@ -29,12 +29,12 @@ specifying it as a relative path: ./[directory] instead of just [directory].
 
 This is the module that makes things work under the hood, but you can also use
 it directly: "perl -MApp::SimpleHTTPServer" which will do the same thing as
-running "serve\_me" -- start up a http server on port 8000 serving the current
+running "serve\_dir" -- start up a http server on port 8000 serving the current
 directory.
 
 ### Options
 
-Just as with serve\_me, you can optionally specify a port and directory to
+Just as with serve\_dir, you can optionally specify a port and directory to
 serve:
 
     perl -MApp::SimpleHTTPServer=8080
