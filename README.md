@@ -36,8 +36,8 @@ directory.
 
 Just as with serve\_me, you can optionally specify a port and directory to
 serve:
-   perl -MApp::SimpleHTTPServer=8080
+    perl -MApp::SimpleHTTPServer=8080
 tells it to use port 8080, and:
-   perl -MApp::SimpleHTTPServer=./foo
+    perl -MApp::SimpleHTTPServer=./foo
 tells it to serve up the 'foo' directory. You can combine them both like so:
-   perl -MApp::SimpleHTTPServer=8080,./foo
+    perl -MApp::SimpleHTTPServer=8080,./foo
