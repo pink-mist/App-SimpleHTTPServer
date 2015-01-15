@@ -13,8 +13,10 @@ serve\_dir understands the following options:
 
 serve\_dir [options] [port] [directory]
 
-* [options] - Currently no options are supported, but a -h/--help option will
-be added soon.
+* [options]
+
+    -h/--help/-?   Show usage
+    -v/--version   Show version information
 
 * [port] - Specify a port to open the http server on (default: 8000).
 
