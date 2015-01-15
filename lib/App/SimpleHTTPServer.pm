@@ -20,7 +20,10 @@ sub import {
     my $path    = shift;
        $path    = '.' unless defined $path;
 
-    plugin Directory => root => $path;
+    push @{ app->renderer->classes }, __PACKAGE__;
+    push @{ app->static->classes }, __PACKAGE__;
+
+    plugin 'Directory::Stylish' => root => $path;
 
     my @args = (qw/ daemon -l /, "http://*:$port/");
        @args = (qw/ eval /) if $TESTING; # For testing, it needs something to
@@ -31,3 +34,5 @@ sub import {
 }
 
 1;
+
+__DATA__
