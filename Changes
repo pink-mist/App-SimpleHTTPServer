@@ -1,4 +1,7 @@
 {{$NEXT}}
+  - Add --help and --version options to serve_dir
+  - Add a README.md
+  - Rename serve_dir.pl to serve_dir
   - Change dependency to Mojolicious::Plugin::Directory::Stylish
   - Let Mojolicious have a secret so it doesn't worry about it
   - Prevent Mojolicious from getting excited about @ARGV
