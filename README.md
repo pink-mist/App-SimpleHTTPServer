@@ -16,6 +16,7 @@ serve\_dir [options] [port] [directory]
 * [options]
 
     -h/--help/-?   Show usage
+
     -v/--version   Show version information
 
 * [port] - Specify a port to open the http server on (default: 8000).
