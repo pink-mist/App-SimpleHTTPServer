@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+0.002     2015-01-15 15:28:29+01:00 Europe/Stockholm
   - Add documentation in the form of
     * --help and --version options
     * README.md
