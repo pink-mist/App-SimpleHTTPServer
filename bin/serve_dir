@@ -52,3 +52,47 @@ if ($version) {
 App::SimpleHTTPServer->import(@args);
 
 # Really, there's not much more to this...
+__END__
+
+=head1 SYNOPSIS
+
+    $ serve_dir            # Serve current dir via HTTP on port 8000
+    $ serve_dir foo/bar    # Serve "foo/bar" dir via HTTP ...
+    $ serve_dir 8080       # Use port 8080 instead of 8000
+    $ serve_dir ./8080     # Serve directory that looks like a port number
+    $ serve_dir 80 8080    # Serve directory named "8080" on port 80
+    $ serve_dir --version  # Show version information and exit
+    $ serve_dir --help     # Show help and exit
+
+=head1 OPTIONS
+
+=over 4
+
+=item [options]
+
+=over 4
+
+=item -h/--help/-?
+
+Show help/usage information and exit
+
+=item -v/--version
+
+Show version information and exit
+
+=back
+
+=item [port]
+
+You can optionally specify a port number to listen on. If none is supplied,
+port 8000 will be used by default.
+
+=item [directory]
+
+You can optionally specify a directory to serve. If the directory name looks
+like a port number and you haven't specified a port, it will be interpreted as
+a port instead of a directory. You can prevent this by specifying the directory
+with a path like C<./8080> if you wanted to serve a directory named C<8080>.
+
+=back
+

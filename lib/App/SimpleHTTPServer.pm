@@ -45,6 +45,8 @@ sub import {
 
 =head1 SEE ALSO
 
+L<serve_dir> - The script used to run this module.
+
 L<Mojolicious> - The Mojolicious web framework
 
 L<Mojolicious::Plugin::Directory::Stylish> - The module that actually renders
