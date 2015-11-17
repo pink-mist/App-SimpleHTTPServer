@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!perl
 
 # ABSTRACT: serve a directory's contents via http
 # PODNAME: serve_dir
