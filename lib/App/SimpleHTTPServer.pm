@@ -47,10 +47,10 @@ sub import {
 
 L<serve_dir> - The script used to run this module.
 
-L<Mojolicious> - The Mojolicious web framework
+L<Mojolicious> - The Mojolicious web framework.
 
 L<Mojolicious::Plugin::Directory::Stylish> - The module that actually renders
-the directory listing
+the directory listing.
 
 =cut
 
